@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PTT Project</title>
+        <!-- fav icon  -->
+        <link rel="icon" type="image" sizes="32*32" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSypvEq1tWAiHg8TRMq4oV4tub7Xu4tb8cEDQ&usqp=CAU">
+        <!-- bootstrap css1 js1  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <!-- fontawesome css1  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- custom css  -->
+        <style type="text/css">
+        
+
+            *{
+                box-sizing: border-box;
+            }
+
+            body{
+                padding: 0;
+                margin: 0;
+            }
+
+            .banners{
+                height: 100vh;
+                background: linear-gradient(
+                    30deg,
+                    steelblue 30%,
+                    skyblue 0% 100%
+                );
+                background-size: 5%;
+
+                transition: all 2s;
+            }
+
+            .banners:hover{
+                background-size: 5.5%;
+                background-position: center;
+            }
+
+            .cardhovers:hover{
+                                /* h v b c  */
+                box-shadow: -7px 5px 5px rgba(0,0,0,0.3);  
+            }
+
+            .maps{
+                width: 100%;
+                /* height: 500px; */
+                height: 40vh;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <!-- Start Header Section  -->
+        <header>
+            <!-- start navbar -->
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand mx-3" >
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSypvEq1tWAiHg8TRMq4oV4tub7Xu4tb8cEDQ&usqp=CAU" width="50" alt="sitelogo">
+                        <span class="ms-3">PTT Project</span>
+                    </a>
+
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                        <i class="navbar-toggler-icon"></i>
+                    </button>
+
+                    <div id="nav" class="navbar-collapse collapse justify-content-between">
+                        <ul class="navbar-nav px-3">
+                            <li class="nav-item"><a href="#" class="nav-link text-uppercase fw-bold">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-uppercase fw-bold">Clients</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-uppercase fw-bold">About</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link text-uppercase fw-bold" data-bs-toggle="dropdown" >Software</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Android App</a></li>
+                                    <li><a href="#" class="dropdown-item">IOS App</a></li>
+                                    <li><a href="#" class="dropdown-item">Linux App</a></li>
+                                    <li><a href="#" class="dropdown-item">Window App</a></li>
+                                </ul>
+                                
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link text-uppercase fw-bold">pricing</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link text-uppercase fw-bold">Contact</a></li>
+                        </ul>
+
+                        <div class="px-3">
+                            <a href="#" class="btn btn-outline-light rounded-0 btn-sm">Sign Up</a>
+                        </div>
+
+                    </div>
+                </nav>
+            <!-- end navbar  -->
+
+            <!-- h1 to h6  -->
+            <!-- display-1 to display-6  -->
+
+            <!-- start banner  -->
+
+                <div class="container-fluid">
+                    <div class="row justify-content-center align-items-center banners">
+                        <div class="col-md-10 text-center">
+                            <h1 class="display-2"><span class="text-primary text-uppercase">ptt</span> <span class="text-capitalize text-white">software development company</span></h1>
+                            <h2 class="text-light fst-italic fw-light">We help companies to digitalize their businesses</h2>
+                            <p class="text-secondary">Properly set processes. Transparent cooperation. Predictable delivery.</p>
+                            <a href="#" class="btn btn-warning rounded-0 btn-lg">Get In Tounch</a>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- end banner  -->
+        </header>
+        <!-- End Header Section  -->
+
+        <!-- Start our Client Section -->
+        <section class="bg-light p-5">
+
+            <div class="container-fluid ">
+                <!-- start title  -->
+                <div class="col-md-12 text-center">
+                    <h2 class="text-warning display-4">Our Clients</h2>
+                    <p class="text-muted lead">Projects We Sucessfully Developed. One look is worth a thousands words.</p>
+                </div>
+                <!-- end title  -->
+                <div class="row text-center">
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card bg-info cardhovers">
+                            <!-- <div class="card-header">a</div> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Toyota</h5>
+                                <h6 class="card-subtitle mb-3">Vehicles</h6>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus eveniet, voluptates nobis iure ut repellat vitae aut beatae dolor sit nam! Perspiciatis exercitationem corporis dicta odio ex ut? Quasi, iure.</p>
+                                <a href="#" class="card-link">Website</a>
+                                <a href="#" class="card-link">Contact</a>
+                            </div>
+                            <!-- <div class="card-footer">c</div> -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card bg-info cardhovers">
+                            <!-- <div class="card-header">a</div> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Mazda</h5>
+                                <h6 class="card-subtitle mb-3">Vehicles</h6>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus eveniet, voluptates nobis iure ut repellat vitae aut beatae dolor sit nam! Perspiciatis exercitationem corporis dicta odio ex ut? Quasi, iure.</p>
+                                <a href="#" class="card-link">Website</a>
+                                <a href="#" class="card-link">Contact</a>
+                            </div>
+                            <!-- <div class="card-footer">c</div> -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card bg-info cardhovers">
+                            <!-- <div class="card-header">a</div> -->
+                            <div class="card-body">
+                                <h5 class="card-title">KIA</h5>
+                                <h6 class="card-subtitle mb-3">Vehicles</h6>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus eveniet, voluptates nobis iure ut repellat vitae aut beatae dolor sit nam! Perspiciatis exercitationem corporis dicta odio ex ut? Quasi, iure.</p>
+                                <a href="#" class="card-link">Website</a>
+                                <a href="#" class="card-link">Contact</a>
+                            </div>
+                            <!-- <div class="card-footer">c</div> -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card bg-info cardhovers">
+                            <!-- <div class="card-header">a</div> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Suzuki</h5>
+                                <h6 class="card-subtitle mb-3">Vehicles</h6>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus eveniet, voluptates nobis iure ut repellat vitae aut beatae dolor sit nam! Perspiciatis exercitationem corporis dicta odio ex ut? Quasi, iure.</p>
+                                <a href="#" class="card-link">Website</a>
+                                <a href="#" class="card-link">Contact</a>
+                            </div>
+                            <!-- <div class="card-footer">c</div> -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card bg-warning cardhovers">
+                            <!-- <div class="card-header">a</div> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Samsung</h5>
+                                <h6 class="card-subtitle mb-3">Communication Technology</h6>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus eveniet, voluptates nobis iure ut repellat vitae aut beatae dolor sit nam! Perspiciatis exercitationem corporis dicta odio ex ut? Quasi, iure.</p>
+                                <a href="#" class="card-link">Website</a>
+                                <a href="#" class="card-link">Contact</a>
+                            </div>
+                            <!-- <div class="card-footer">c</div> -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card bg-warning cardhovers">
+                            <!-- <div class="card-header">a</div> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Mi</h5>
+                                <h6 class="card-subtitle mb-3">Communication Technology</h6>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus eveniet, voluptates nobis iure ut repellat vitae aut beatae dolor sit nam! Perspiciatis exercitationem corporis dicta odio ex ut? Quasi, iure.</p>
+                                <a href="#" class="card-link">Website</a>
+                                <a href="#" class="card-link">Contact</a>
+                            </div>
+                            <!-- <div class="card-footer">c</div> -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card bg-warning cardhovers">
+                            <!-- <div class="card-header">a</div> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Sony</h5>
+                                <h6 class="card-subtitle mb-3">Communication Technology</h6>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus eveniet, voluptates nobis iure ut repellat vitae aut beatae dolor sit nam! Perspiciatis exercitationem corporis dicta odio ex ut? Quasi, iure.</p>
+                                <a href="#" class="card-link">Website</a>
+                                <a href="#" class="card-link">Contact</a>
+                            </div>
+                            <!-- <div class="card-footer">c</div> -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card bg-warning cardhovers">
+                            <!-- <div class="card-header">a</div> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Oppo</h5>
+                                <h6 class="card-subtitle mb-3">Communication Technology</h6>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus eveniet, voluptates nobis iure ut repellat vitae aut beatae dolor sit nam! Perspiciatis exercitationem corporis dicta odio ex ut? Quasi, iure.</p>
+                                <a href="#" class="card-link">Website</a>
+                                <a href="#" class="card-link">Contact</a>
+                            </div>
+                            <!-- <div class="card-footer">c</div> -->
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+        </section>
+        <!-- End  our Client Section -->
+
+        <!-- Start software Section -->
+        <section>
+            <div class="container-fluid">
+                <!-- start title  -->
+                <div class="col-md-12 text-center">
+                    <h2 class="text-warning display-4">Software</h2>
+                    <p class="text-muted lead">Projects We Sucessfully Developed. One look is worth a thousands words.</p>
+                </div>
+                <!-- end title  -->
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mx-auto mb-2">
+                        <img class="img-thumbnial" src="data:image/jpeg;base64,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" alt="android">
+                        <h3 class="text-warning my-3">Android Application</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur repellendus esse sint consectetur. Vero, ipsum provident inventore sed adipisci a ab aliquid numquam, corporis laborum eos fuga distinctio ea corrupti.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mx-auto mb-2">
+                        <img class="img-thumbnial" src="data:image/png;base64,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" alt="ios">
+                        <h3 class="text-warning my-3">IOS Application</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur repellendus esse sint consectetur. Vero, ipsum provident inventore sed adipisci a ab aliquid numquam, corporis laborum eos fuga distinctio ea corrupti.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mx-auto mb-2">
+                        <img class="img-thumbnial" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABwIEBQYIAQP/xABBEAABAwMCBAMECAMECwAAAAABAAIDBAURBiEHEjFBE1FhFCJxgRUjMkJSkaGxCCTBN3N00RYlNDU2YnKCsuHw/8QAGgEBAAIDAQAAAAAAAAAAAAAAAAEFAgQGA//EACcRAQACAQMEAQMFAAAAAAAAAAABAgMEERIFEyExQTJR4QYUImGh/9oADAMBAAIRAxEAPwCcUREBERAREQEREBEWOvV3oLFbpa+7VAp6WPHM9wJ/IDc/JBkT0WNuN9tFqexl0utDROeCWtqalkZcB1xkjKgDW/GG8XeoMGnZZLZQRkgOYR4s3kSce7t2Hz9IylkklkfLM9z5Hkl7nEkuJ7koOuX680k2qjpjqO1+I9pcCKlpZgebweUH0Jysnbb3arpz/RdzoazkID/ZqhknLnOM8pOOh/JcYL1uzgRsc9UHcCLlzS/FfU9gnY2oqjcqLABgqzk423a8bg7eo9Cp30Rryzaxh/1fIY6xjeaakk2cwZ6js4fD0yg2xERAREQEREBERAREQEREBERAREQERD0QFzXxs1jLe78+0UtSHW2iOC1jvdkl7k+eOg7KeNZ3QWbS1xuGSDDA7lIBOCdh0+K49lkdJI98jsueS4nzJQUIiKQHVVwDMzR5kKhVxP5ZQ7y3Qb4LNSTWYSTNaH42WpE1Nnr46iinlglY7LJY3crmkfBV1F7qZIxE0+40LHyTySuy92VA6t4a6wh1fYWTnDa6H6upj5gTzfj27FbeuU+E2pH6c1bTOeXOpqpwgmYD2PR2O5BXVXfbBQVIiICIiAiIgIiICIiAiIgIiICIiCPOOtTNTcPaoQSFnizxxSY7tJOR+gXMTRjqumOPv9n0n+Li/cqH+GWkxqCrknngdNCwgNbjbPqg06GmM7HGF7S5u/J0XwLS1xa7Zw6hdAaq4Ww1lEH2uibBUxtyx8eNyPMKB7i2aOtmjqWls7HlsgxjDhsUFsvtBTyzn6qGR+OvK1Z7Q2mZ9UXb2aKMvjiw6TB8+n7FTzb9DQ2ynaHGmib0w443Qc4QUBqA9rJMVDASYpNifgrJ2QSCMb7hT5xM0I2otYrqGkayqhHMJovvfFQNM8veXPzzn7XxQUMc5j2uZs5pyPiuydKVYrtOW2pErZvEp2HnYQQTj0XGw6hdV8H6yGr4fWjwCT4MZhf7pGHNO/7oN1REQEREBERAREQEREBERAREQEREEc8d4ZZeH0/hsc/kqInuwM4aCck+i0Cw3aXTnBSesoCY6yrqjCJmHdmSd/TYKVOLn9nd6/uh+4UXcN6OLV/Dq76ZMjY6qCXxoOY9zkj9chB9+FOrqiC62yklraipgr3mCdlRM6QslwSHNJO2cbj1C07ibS0jeIt2a2RscRn5nY7EtBP6q/0XpS60F4hrJiYpKOcuZEN8uGRn4KQmaatchdJUUcclRIS+V79y5x3JVXqur4NPbj7n+mzTS3vG8+IYL+HsU0N2ucLZ2ySOYxzcfeG/7brT+JWq6q862qXTcz6GgqHQw0z3EMww4JI8yQd/gpPtNhZbbwytoKBlJNH9iWM9R3a4eSj7XGg7q+81tzttP41PUyvmMTTlzS45I9d8qdP1bTZp232ljfT3r68pD4O6kZdKitszJXS0TIGzQsldzGLJw5mTvjoRnzUIa0oBbdW3ikaRyR1cnJj8JOR+hU2cHNMf6KWqsvV2niZUVEY+rDgfDjG+/qf6KDdU3L6Y1Hc7i0gsnqXuZgfdzhv6YVnExPmHgxQXTXAL+zyD/FTfuuZV0p/D9Usk0MadoPNDVSc2fXcKRJqIigEREBERAREQEREBERAREQEREGqcTqWWs0FeIYADIafOCcbAglQVw2pKqmE1whnki8ZvIGtP2m//AGV0LrX/AISu3+Ff+y5z0FfJYw2k8HxGRe9gdcdytPXdzsT2/b30/HnHL0la3U4jZnA8ySspCzOFjrXV0lXA10MoPmCcELLRGOMfbYP+4LgssWm07+1raY28Ltg5GKh4DuvRYysvlFTEt8QyP/DGOYrFz19RcDh/8vB+Bp3cPUrLtXvHraGFYnde1otdYZKKRhd4gPNy7NPxK571HSw0N7raaldmGOUhnwU6DnDCKaF0jgPudMqCL3LLLeKx88ZikdO4uZ+Hfoun6HjyV5TO/Fq6zjER92PU/wD8ONYx9luVHykPjnD/AJEKJajSlQ6jiq7c/wBojcwOc07EFZfg5e3WPW9OyV3JBV5p5gTgZ7E/AroWg6lReBeqAREQEREBERAREQEREBERARFS9zWMc9xAa0ZJPYINV4mXSntGi7lLUva0yRGKNpdgvcdsBQZwZZG6+VfOwOd7Pgem6+nGLWI1Td2wURzbaJxbG7G739HO+CkHgnosW2yvvFxiIrK5oMbXfcj7beZ6oLO8Wc0VR7VTRF8OcvAG7R/kvmau3StA8NrX435srebjSup6hzXAYd0WKntlDM7mlpWF3njqqjU9LjLblWdm5j1XGNpjdrLKmFzxHSx5dnHuhZmhtr5cSVYOO0eevxWUordE08lJAxudth0Wx2+0Bjmvl6pp+lUx25Xncy6u1o2rGyxo7TJNAAyMRtxseigbjFYJrRqc1b48RVrebIG3OBg/0K6gaAxoa3oFqXE7SzdVaXqKZkYNXCDLTnuHgdPnurasREbQ1JmZ8y570nqWK10slNWcxYTmM+XmsDcq32q5yVcDBDl/M0N7Ed1ZvY5jnNeC1zSQWkbg9wqB12WSHVvCrVf+lemYZpyz22n+qna3zA2OPULdFylwt1adKajjlml5aCpIjqR1wOzsehXVEEjJomSxuD2PaHNcN8hQPqiIgIiICIiAiIgIiICIiAoY43a+FJDJpq0SObUSAGpnY/HI38APme62jitryLSVtFNTNElyqmERNzsxvQuK5imlkmkklmkL5Xnmc9xyXEoNu4W6WfqnVMMMrT7FTnxpzjYgdG/MrqqONsUTY2NDWNGAB2CibgPTQUVj8UjlmqnF5J6uHQKWw71SRbVtFFWMAkGPIrGMsLTIQ555Vm3OA6kBfNs8Zdjm+CgfOkooaVuI27+ausLzm9ULgOpAQeoem6oM0Y3Lh+a+EtbE3o4IOY+M1jjsmt6n2dnJBWMFQ0AbAnPN+oz81oqm/wDiHo21FLabnHn3HPhOBnYjIz8x+qhBSPRuQp/4KcQY66CLTd2kxWxjlpZXHaZo+78QFz+vtR1M9FVRVNLK6KeJwcx7DgtI7qR22ijvhPxAbq2jNHXgR3WmYPE7CUfiHr5hSJlQCIiAiIgIiICIiAretqoqKlmqZ3YihYXvPoFcLSOL15Fm0NXPbIWzVAEEWHYOXd/kN0HOOsL9LqXUNZdJjkSvIiafusH2R/X5rEU8LpZ2RBhc4n7IG5V3QtbBTy1UjObHuRZ6F3mt64LaVdqDUTrjWMLqSi3JI2dIeg+XX8kEn6F0/UwWihjfmPw4Wgj1wt/pqcwtAc8uOO6+kUTImBjGhoaOyrQUPY0g5GThW9NTMxl4zvsD2V2gCgeANHu4VMsTJW8p6KtEGKqbR4hzHK4fNY6ptlTFnALh33WzIdx0ypGk1tto7zQzWm7x89NMCAe7HdiFztqnTs+ltQy224tcY2HLHjbxYz0IXWFfb2Tt5owGvCjDjLp5920t9IiLNbbDknG7oj1/Lr8kEGzUbJWumoC6SMdWu+01WON+iu6COp8TxKfIcPXr8VXcYMtFTE3DXnD2+TlIqsV2qLLd6W5Ujy2aCQO2+8O4+YXYFjuUN3tNHcaY5hqomyMOMdRnp2XF46+S6C/h6v7quz1dlnl5pKJ4fEHHpG7y+BB/RBLyIigEREBERAREQFAH8Ql59tvVBY6eTn9nb4kjAej3bDPyypxvFwgtNsqbhVPDIKeMyPJ8gFyXVXV961BX3usHvPc6Yjy7NH5YQWNwzJNBQUoLxGQwNH3nn/2uqOHenI9M6Vo6FoBlLfEndjcvO5UBcHLD9P61hkqG88NJ/MSZ7uzt+q6i2xjoPRB6iIoFL38nLnqThVK3nP8AMxM+auEBERAREQPgrW5UcdbQVFNIwETRuYR8QrpEHHhmbZayro3szJDK+I57YJC+FDO2prJYJtmVDSAfwu7FZnixSCj4g3hjGcrHSh7R5gtH9crWKE4rac5x9a391I+bmlsha7qCQVtnCq9fQeubdOXlsU7/AGeTr0fsP1wtZuWBXz8v2ecq2BLSCCQRuCOykdvhVLFaXr/pXT1ur/qyZ6djz4Zy0EjfCyqgEREBERARFRM8Mie89GtJ2QQXx81iJ5WaYt85xGQ+u5emdi1n9T8lEtKzNnrXj7rmfkSvL3Wm5Xetr8yH2iZ8gMhy7lJOM/AYWQt8VPNYq9rJPrBGHFuNyQcoJa/hxt7GW66XFzfffKImn0Az+6mZRnwAh8PRJf3fO4qTEBEQ9FAtJz/PRfBXYVnJ/vBn/SrxAREQEREBERBzFx1jDOINRj70Ebj+q0e2M8Svhaezs/lut749YPECXG/8tH/VaPRfVMnqDsQ3lbnzKkW07ueaR3m4n9V817vjC8x0UjqfgtVms4e20uYGeDzwjB68riMrelHnAjbh3Sf30v8A5lSGoBERARMrzI80Ar5zs8SB7OnM0jPyVZWD1Ld2UFE+OGUe1yDljaNyD5n4Lyy5a46Ta3wyrWbTtDnql4Y3SWvq6aaphihp5nRiTqXgdxjorTUOi7ppb+bY5tXSYw97Gkco9R/VTNQtc2P3tyd3E9SVcSxRzMdHM1r43DDg4ZBC5Weu5ozbz9P2/Kz/AGVOPvyx3Am40M2m5aKnn+shlJ8Jxw4A7/NSeuZdU2m4aGvUV6sL3xU7n5AadmnyPopf4ecRrdqyFlNK5tPc2j34HbeIfNq6nBmpnxxkpPiVZek0txlvaIi9WK0P+3j4K7Vo7La4HBxjqrtAREQERCgKjxGDq4fmre6SPht1TJGcPbGSFp9PIx7AXNJcRkuce/xVX1HqcaKYjjvu2MOnnLEzHwhDilXRXLXt1qXHNPFIIW8p+1yj/PK1SSr52hjYY2Rg/ZA6rb+LckDtShkDA0Mj94gface60dWGny97FGTbbd43rxtxXLJKd+0sXL/zRq5r7V4FLHWU8wmgf8nN+IWNbjmHN077LcNHWh2qLq2le1zaCFuZsbfALLLkripN7eoRWvKdnQnC23/Rug7PCWMY58AlPL3Lt8/qtsWIsU8Hs0dHFHHCIGBrIoxhoYBgYHYenZZZY4c1M1IvT1KbVms7S9REXqxU+S0O9XeurrnPTUs81PTwP5QIyWOce+e631RoW+Fda2Jzi8ioflx2J3VP1nNfFhiaTtvLb0dK2vPJ8nUB7Pf8nHKrgt7WbnJJ656n4q/AXq4+2e8xtM7raKxHqHjGhrVWqV6vFKyutugutvno6pgcyVpG/Y+YXP8AdaCs05e3QiV8c0D+aKVmQSOxBXRnTdaHxT019J0AudIzmqIB7zWjqFd9F13Zy9q0/wAbf5LT1eHlXlHuGU4acXYq3wrVqmRkVRs2KsJw2TyDvI+qmMODmhzSCCMghcQ79wpk4KcQKqGug03dpfFpZfdpJHEZjd+H1BXZqlPWAeo3XqIoBERAREPQoNevVzc6GeCMDk5SCVrUcmKcH0WSu/1cdU47YB6rC0b/ABIQPMLmP1BG96rPQfTKOeIVinr5/baSPne3ZzO5Cjt1JUsdyvp5Wu8iw5XQVXSczsgFWn0fg7g7po+sThxRSY3ZZdJF7colDVq03c7jI1rKeSNhOC+QYH5KadIWWGx2wU0Ay47yPxgvKuaOgbkF4zjoss1jW+6PLqtHqPVL6mOEeKvTDpq4/PtlNN830pkjYROyc+oW1NIPRaLFPLTTNmhdiRnTyPxW326uhroRLC8Hs5p6tPkrjoWopOHtfMNPWYpi/L4XqLzI816r5pP/2Q==" alt="linux">
+                        <h3 class="text-warning my-3">Linux Application</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur repellendus esse sint consectetur. Vero, ipsum provident inventore sed adipisci a ab aliquid numquam, corporis laborum eos fuga distinctio ea corrupti.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 mx-auto mb-2">
+                        <img class="img-thumbnial" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqqMK2PyIjVmh9_Ui3muvZXrIcGbRQcn8T-g&usqp=CAU" alt="window">
+                        <h3 class="text-warning my-3">Windows Application</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur repellendus esse sint consectetur. Vero, ipsum provident inventore sed adipisci a ab aliquid numquam, corporis laborum eos fuga distinctio ea corrupti.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End  software Section -->
+
+        <!-- Start Team Section -->
+        <section class="bg-secondary p-5">
+
+            <div class="container-fluid">
+                <!-- start title  -->
+                <div class="col-md-12 text-center">
+                    <h2 class="text-warning display-4">Team</h2>
+                </div>
+
+                <!-- end title  -->
+
+                <div class="row">
+                    <div class="col-lg-4 col-sm-10 mx-auto mb-3">
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF7CvOWHJtbCQJKEOATCfmwB2kmXzW-CC90E2FvHtqftAN9PtsEvSNmpS8qw&s" class="img-thumbnial" alt="p1">
+                            <div class="card-body">
+                                <h3 class="title">Ms.Khin Myat Noe</h3>
+                                <p class="sub-title lead">Operation Manager</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="float-end">
+                                    <a href="#" target="_blank" ><i class="fab fa-facebook text-primary fa-2x"></i></a>
+                                    <a href="#" target="_blank" ><i class="fab fa-twitter text-info fa-2x"></i></a>
+                                    <a href="#" target="_blank" ><i class="fab fa-youtube text-danger fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-10 mx-auto mb-3">
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF7CvOWHJtbCQJKEOATCfmwB2kmXzW-CC90E2FvHtqftAN9PtsEvSNmpS8qw&s" class="img-thumbnial" alt="p2" >
+                            <div class="card-body">
+                                <h3 class="title">Mr.Htet Paing</h3>
+                                <p class="sub-title lead">Project Manager</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="float-end">
+                                    <a href="#" target="_blank" ><i class="fab fa-facebook text-primary fa-2x"></i></a>
+                                    <a href="#" target="_blank" ><i class="fab fa-twitter text-info fa-2x"></i></a>
+                                    <a href="#" target="_blank" ><i class="fab fa-youtube text-danger fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-10 mx-auto mb-3">
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF7CvOWHJtbCQJKEOATCfmwB2kmXzW-CC90E2FvHtqftAN9PtsEvSNmpS8qw&s" class="img-thumbnial" alt="p3">
+                            <div class="card-body">
+                                <h3 class="title">Ms.Pyae Phyo Paing</h3>
+                                <p class="sub-title lead">Founder and CEO</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="float-end">
+                                    <a href="#" target="_blank" ><i class="fab fa-facebook text-primary fa-2x"></i></a>
+                                    <a href="#" target="_blank" ><i class="fab fa-twitter text-info fa-2x"></i></a>
+                                    <a href="#" target="_blank" ><i class="fab fa-youtube text-danger fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            
+        </section>
+        <!-- End  Team Section -->
+
+        <!-- Start Public Interest Section -->
+        <section class="py-5">
+            <div class="container-fluid">
+                <!-- start title  -->
+                <div class="col-md-12 text-center">
+                    <h2 class="text-warning display-4">Public Interest Section</h2>
+                    <p class="text-muted lead">Projects We Sucessfully Developed. One look is worth a thousands words.</p>
+                </div>
+                <!-- end title  -->
+                <div class="row">
+                    <div class="col-lg-6 col-sm-10 mx-auto">
+                        <h3>Ebook</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-primary progress-bar-striped " style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    
+
+                    
+                        <h3>Android Application</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-secondary progress-bar-striped " style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    
+
+                    
+                        <h3>IOS Application</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success progress-bar-striped " style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+                        </div>
+                    
+
+                    
+                        <h3>Linux Application</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger progress-bar-striped " style="width: 5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+                        </div>
+                    
+
+                    
+                        <h3>Windows Application</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-info progress-bar-striped " style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                        </div>
+                    </div>
+
+                  
+                </div>
+            </div>
+        </section>
+        <!-- End  Public Interest Section -->
+
+        <!-- Start Pricing Section -->
+        <section class="bg-secondary p-4">
+            <div class="container-fluid">
+                <!-- start title  -->
+                <div class="col-md-12 text-center">
+                    <h2 class="text-warning display-4">Pricing</h2>
+                    <p class="text-light lead">Projects We Sucessfully Developed. One look is worth a thousands words.</p>
+                </div>
+                <!-- end title  -->
+                <div class="row text-center">
+                    <div class="col-md-4 col-sm-10 mx-auto mb-3" >
+                        <div class="card">
+                            <div class="card-body">
+                                <h5>BLOG SITE / FREE</h5>
+                                <h6>$ 0/momth</h6>
+                                <hr>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Single User</li>
+                                    <li class="list-group-item">5GB Storage</li>
+                                    <li class="list-group-item">Unlimited Public Projects</li>
+                                    <li class="list-group-item">Community Access</li>
+                                    <li class="list-group-item">Dedicate Phone Support</li>
+                                    <li class="list-group-item">Free Subdomain</li>
+                                    <li class="list-group-item">Monthly Status Report</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-grid">
+                                    <a href="#" class="btn btn-warning text-white text-uppercase">checkout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-10 mx-auto mb-3" >
+                        <div class="card">
+                            <div class="card-body">
+                                <h5>BLOG SITE / FREE</h5>
+                                <h6>$ 0/momth</h6>
+                                <hr>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Single User</li>
+                                    <li class="list-group-item">5GB Storage</li>
+                                    <li class="list-group-item">Unlimited Public Projects</li>
+                                    <li class="list-group-item">Community Access</li>
+                                    <li class="list-group-item">Dedicate Phone Support</li>
+                                    <li class="list-group-item">Free Subdomain</li>
+                                    <li class="list-group-item">Monthly Status Report</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-grid">
+                                    <a href="#" class="btn btn-warning text-white text-uppercase">checkout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-10 mx-auto mb-3" >
+                        <div class="card">
+                            <div class="card-body">
+                                <h5>BLOG SITE / FREE</h5>
+                                <h6>$ 0/momth</h6>
+                                <hr>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Single User</li>
+                                    <li class="list-group-item">5GB Storage</li>
+                                    <li class="list-group-item">Unlimited Public Projects</li>
+                                    <li class="list-group-item">Community Access</li>
+                                    <li class="list-group-item">Dedicate Phone Support</li>
+                                    <li class="list-group-item">Free Subdomain</li>
+                                    <li class="list-group-item">Monthly Status Report</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-grid">
+                                    <a href="#" class="btn btn-warning text-white text-uppercase">checkout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            
+        </section>
+        <!-- End  Pricing Section -->
+
+        <!-- Start Contact Section -->
+        <section class="p-5">
+            <div class="container-fluid">
+
+                <!-- start title  -->
+                <div class="col-md-12 text-center">
+                    <h2 class="text-warning display-4">Contact</h2>
+                </div>
+                <!-- end title  -->
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 col-sm-10 mx-auto mb-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Office Location</h5>
+                            </div>
+                            <div class="card-body">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969022.8612471465!2d97.21037346663957!3d13.7185169486624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30fbb15193f2114f%3A0x2e243e59ba140309!2sLotteria!5e0!3m2!1sen!2smm!4v1710427625648!5m2!1sen!2smm" class="maps" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <div class="card-footer">
+                                <p>Phone : 0942204225</p>
+                                <p>Email : abc@pttt.com</p>
+                                <p>Address : No.123,Aung San St,Mandalay Myanamar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-8 col-sm-10 mx-auto mb-3">
+                        <div class="text-center">
+                            <h3>Got Question</h3>
+                            <p>Stay Connected</p>
+                        </div>
+                        <form action="" method="">
+                            <div>
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" class="form-control form-control-sm rounded-0 mb-3" placeholder="enter your name">
+                            </div>
+
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" class="form-control form-control-sm rounded-0 mb-3" placeholder="enter your email">
+                            </div>
+
+                            <div>
+                                <label for="msg">Message</label>
+                                <textarea name="msg" id="msg" cols="30" rows="10" class="form-control form-control-sm rounded-0 mb-3" placeholder="enter your message"></textarea>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-warning rounded-0 ">Submit</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End  Contact Section -->
+
+         <!-- Start Footer Section -->
+         <footer class="bg-dark py-3">
+            <div class="container-fluid">
+                <div class="col-12 text-center">
+                    <p class="text-warning"> &copy; Copyright reserved.<span id="autoyear"> 2024 </span> Make by PTT Co.Ltd.</p>
+                </div>
+            </div>
+         </footer>
+        <!-- End  Footer Section -->
+
+
+
+
+
+            
+      <!-- bootstrap css1 js1  -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+      <!-- jquery js1  -->
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
+
+      <script type="text/javascript">
+
+           let autoyear = document.getElementById("autoyear");
+           let newyear = new Date.UTCFullYear();
+           autoyear.innerHTML = newyear;
+
+      </script>
+    </body>
+</html>
